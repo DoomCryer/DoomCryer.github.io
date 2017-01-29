@@ -1,0 +1,150 @@
+/***** IE7 *****/
+.lt-ie8 nav#top_nav li, .lt-ie8 nav#top_nav ul a, lt-ie8 #tactical nav a, 
+.lt-ie8 .social-media-nav a, .lt-ie8 #shareBar li a, .lt-ie8 footer a.sm_icon {
+    zoom: 1;
+    *display: inline;
+}
+.lt-ie8 .social-media-nav a {
+    display: block;
+    float: left;
+}
+.lt-ie8 #page_nav {
+    overflow: hidden;
+}
+.lt-ie8 #page_nav {
+    position: static;
+}
+.lt-ie8 abbr {
+    text-decoration: none;
+    border: none;
+}
+.lt-ie8 footer a.sm_icon {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+.lt-ie8 footer a.sm_icon-instagram + br {
+    clear: left;
+    display: block;
+}
+.lt-ie8 .flex-direction-nav {
+    position: static !important;
+}
+.flexslider .flex-prev {
+    left: 0;
+}
+.flexslider .flex-next {
+    left: 234px !important;
+    right: auto !important;
+}
+.lt-ie8 #breadcrumbs {
+    padding-top:9px; 
+}
+.lt-ie8 #breadcrumbs li, .lt-ie8 #breadcrumbs2 li  {
+    padding-left: 15px !important;
+    background: url("../img/ie7-bread-arrows.png") no-repeat 1px 0px !important;
+}
+.lt-ie8 #breadcrumbs li:first-child, .lt-ie8 #breadcrumbs2 li:first-child {
+    padding-left: 0px !important;
+    background: none !important;
+}
+.lt-ie8 #top_mark {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
+    left: 0;
+}
+#navigation{
+    z-index: 100;
+}
+
+
+/*** Small Tablet ***/
+@media only screen and (min-width: 600px) {
+    .lt-ie8 nav#top_nav ul a:hover, .lt-ie8 nav#top_nav ul a.active {
+        padding-bottom: 0px;
+        border-bottom-width: 5px;
+    }
+    .lt-ie8 #banner-title {
+        left: 28px;
+    }
+}
+/** Two Column **/
+@media only screen and (min-width: 720px) {
+    .lt-ie8 #page_nav {
+        float: none;
+        position: absolute;
+        top: 242px;
+    }
+    .lt-ie8 .primary_pg #page_nav {
+        top: 293px;
+    }
+    .lt-ie8 #main_content {
+        min-height: 470px;
+    }  
+}
+@media only screen and (min-width: 770px) {
+    .lt-ie8 #page_nav {
+        top: 250px;
+    }
+    .lt-ie8 .primary_pg #page_nav {
+        top: 306px;
+    } 
+}
+@media only screen and (min-width: 820px) {
+    .lt-ie8 #page_nav {
+        top: 270px;
+    }
+    .lt-ie8 .primary_pg #page_nav {
+        top: 330px;
+    } 
+}
+/** Two Column **/
+@media only screen and (min-width: 890px) {
+    .lt-ie8 #page_nav {
+        top: 280px;
+    }
+    .lt-ie8 .primary_pg #page_nav {
+        top: 340px;
+    } 
+}
+/** Two Column **/
+@media only screen and (min-width: 920px) {
+    .lt-ie8 #page_nav {
+        top: 290px;
+    }
+    .lt-ie8 .primary_pg #page_nav {
+        top: 350px;
+    } 
+}
+/* Go to fixed width view */
+@media only screen and (min-width: 941px) {
+    .lt-ie8 nav#top_nav ul a {
+        display: inline;
+        margin-left: 17px !important;
+    }
+    .lt-ie8 #banner-title {
+        left: 188px;
+    }
+    .lt-ie8 #sidebar {
+        float: none;
+        position: absolute;
+    }
+    .lt-ie8 #page_nav, .lt-ie8 #sidebar {
+        top: 270px;
+    }
+    .lt-ie8 #sidebar {
+        right: 0px;
+    }
+    .lt-ie8 .primary_pg #page_nav {
+        top: 327px;
+    }
+    .lt-ie8 nav#top_nav a:hover, .lt-ie8 nav#top_nav a.active {
+        padding-bottom: 7px !important;
+        border-bottom-width: 8px !important; 
+    }
+    .lt-ie8 nav#top_nav ul {
+        padding-left: 10px;
+    }  
+}

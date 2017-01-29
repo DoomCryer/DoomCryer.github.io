@@ -1,0 +1,239 @@
+.sprite-infra {
+    background-image: url(../images/sprites/infra.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-infra-court {
+    width: 70px;
+    height: 70px;
+    background-position: -1px -1px;
+}
+
+.sprite-infra-court_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -73px -1px;
+}
+
+.sprite-infra-fence {
+    width: 70px;
+    height: 70px;
+    background-position: -145px -1px;
+}
+
+.sprite-infra-fence_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -217px -1px;
+}
+
+.sprite-infra-guard {
+    width: 70px;
+    height: 70px;
+    background-position: -289px -1px;
+}
+
+.sprite-infra-guard_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -1px -73px;
+}
+
+.sprite-infra-gym {
+    width: 70px;
+    height: 70px;
+    background-position: -73px -73px;
+}
+
+.sprite-infra-gym_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -145px -73px;
+}
+
+.sprite-infra-fitness {
+    width: 70px;
+    height: 70px;
+    background-position: -73px -73px;
+}
+
+.sprite-infra-fitness_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -145px -73px;
+}
+
+.sprite-infra-heli {
+    width: 70px;
+    height: 70px;
+    background-position: -217px -73px;
+}
+
+.sprite-infra-heli_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -289px -73px;
+}
+
+.sprite-infra-horses {
+    width: 70px;
+    height: 70px;
+    background-position: -1px -145px;
+}
+
+.sprite-infra-horses_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -73px -145px;
+}
+
+.sprite-infra-hospital {
+    width: 70px;
+    height: 70px;
+    background-position: -145px -145px;
+}
+
+.sprite-infra-hospital_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -217px -145px;
+}
+
+.sprite-infra-kindergarden {
+    width: 70px;
+    height: 70px;
+    background-position: -289px -145px;
+}
+
+.sprite-infra-kindergarden_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -1px -217px;
+}
+
+.sprite-infra-parking {
+    width: 70px;
+    height: 70px;
+    background-position: -73px -217px;
+}
+
+.sprite-infra-parking_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -145px -217px;
+}
+
+.sprite-infra-parks {
+    width: 70px;
+    height: 70px;
+    background-position: -217px -217px;
+}
+
+.sprite-infra-parks_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -289px -217px;
+}
+
+.sprite-infra-playground {
+    width: 70px;
+    height: 70px;
+    background-position: -1px -289px;
+}
+
+.sprite-infra-playground_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -73px -289px;
+}
+
+.sprite-infra-river {
+    width: 70px;
+    height: 70px;
+    background-position: -145px -289px;
+}
+
+.sprite-infra-river_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -217px -289px;
+}
+
+.sprite-infra-school {
+    width: 70px;
+    height: 70px;
+    background-position: -289px -289px;
+}
+
+.sprite-infra-school_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -361px -1px;
+}
+
+.sprite-infra-shops {
+    width: 70px;
+    height: 70px;
+    background-position: -361px -73px;
+}
+
+.sprite-infra-shops_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -361px -145px;
+}
+
+.sprite-infra-watcher {
+    width: 70px;
+    height: 70px;
+    background-position: -361px -217px;
+}
+
+.sprite-infra-watcher_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -361px -289px;
+}
+
+.sprite-infra-water {
+    width: 70px;
+    height: 70px;
+    background-position: -1px -361px;
+}
+
+.sprite-infra-water_grey {
+    width: 70px;
+    height: 70px;
+    background-position: -73px -361px;
+}
+
+
+
+
+.sprite-newstroi {
+    background-image: url(../images/sprites/sprite_newstroi.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-newstroi-metro {
+    width: 19px;
+    height: 13px;
+    background-position: -2px -2px;
+}
+
+.sprite-newstroi-photo {
+    width: 20px;
+    height: 16px;
+    background-position: -2px -19px;
+	margin-bottom: -3px;
+}
+
+.sprite-newstroi-star {
+    width: 22px;
+    height: 21px;
+    background-position: -26px -2px;
+	margin-bottom: -6px;
+}
+

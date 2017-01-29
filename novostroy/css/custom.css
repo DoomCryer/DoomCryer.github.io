@@ -1,0 +1,11 @@
+@media screen and (max-width: 640px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
+}
+
+span.has-error{
+	font-size:11px;
+	    margin-left: 5px;
+}
