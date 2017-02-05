@@ -21,11 +21,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  body
+    width: 100vw !important
+    min-width: 320px !important
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
   #newstrois_global_id
     width: 85vw
   .navbar-header
@@ -36,6 +35,10 @@
   #navbar
     display: none
 
+  .container
+    width: 95vw !important
+    margin-left: 0
+
   .navbar-nav
   	li
   		a
@@ -44,6 +47,9 @@
 
   .top-page-margin
   	display: none
+
+  .bg-ad
+    width: 100vw !important
 
   .search-block
     height: 250px !important
@@ -60,7 +66,7 @@
         height: 40px !important
         // color: #eee !important
       .search-param
-        width: 100vw
+        width: 95vw
         display: flex
         padding-top: 20px
         label
@@ -76,7 +82,7 @@
   .podcast-block
     padding: 5px 5px
     width: 100vw
-    height: 65px !important
+    height: initial !important
     background-color: #fff
     text-align: center
     line-height: 1.5
@@ -88,7 +94,240 @@
       width: 100vw
 
   .gallery-big-block
-  	width: 100vw
+    padding: 0 20px !important
+    //margin-bottom: 20px !important
+    width: 100vw !important
+    background-image: url('../images/galbg_.jpg') !important
+    background-size: auto !important
+    height: 420px !important
+    .custom-navigation-1
+      display: none !important
+    .content
+      //padding-bottom: 30px
+    p
+      display: none
+    .flex-control-nav
+      bottom: -50px
+
+  .ad-block-1
+    width: 100vw
+    padding: 10px 0 20px
+    //padding-top: 10px
+    background-color: #eff2f4
+    display: flex
+    //padding-left: 15px
+    h5
+      font-size: 10px !important
+      margin-top: 5px
+    p
+      width: 40vw !important
+    .side-block-preview
+      padding: 0
+      padding-left: 10px
+      margin: 0
+    .full-link
+      font-size: 11px !important
+
+  .section_2
+    width: 100vw
+    display: flex
+    //margin-bottom: 200px
+    font-size: 12px
+    h4
+      margin: 0
+      font-size: 13px
+    .events-block, .news-block
+      height: initial !important
+      padding: 10px 15px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    //.news-block
+    //  height: initial !important
+    //  padding: 10px 15px
+    //  display: flex
+    //  flex-direction: column
+    //  justify-content: space-between
+    .small-line
+      margin: 10px 0 !important
+    .events-story, .news-story
+      margin-top: 10px !important
+      margin-bottom: 0 !important
+    .events-context, .news-context
+      margin-bottom: 0 !important
+
+  .section_3
+    @extend .section_2
+    .journal-small-block
+      width: auto !important
+      min-height: initial
+      //padding-top: 10px
+      //padding: 10px
+      padding: 0 10px
+      a
+        color: #333
+      h4
+        line-height: 1.5
+        padding-top: 10px
+      p
+        line-height: 1.4
+
+  .disco
+     img
+       width: 100vw !important
+       height: initial !important
+
+  .before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+
+  .section_4
+    width: 100vw
+    display: flex
+    background-image: url('../images/defaultBG.jpg')
+    background-size: cover
+    background-position-x: left
+    background-position-y: bottom
+    position: relative
+    &::before
+      @extend .before
+      background-color: #010c23
+      opacity: .7
+    h3
+      margin: 0 !important
+    .newstroi-block
+      width: 100vw !important
+      padding: 5px 10px 10px !important
+      height: initial !important
+      z-index: 2
+      h3
+        font-size: 17px
+        padding-bottom: 5px
+    .for-big
+      width: 100% !important
+      margin-right: 0 !important
+    .big-image
+      width: 100% !important
+    .photo-text
+      padding: 10px !important
+      h4
+        margin: 0
+      p
+        margin: 10px 0 0 !important
+        font-size: 13px
+        line-height: 1.5
+
+  .section_5
+    @extend .section_2
+    //margin-bottom: 200px
+    .experts-block
+      padding: 10px
+      padding-bottom: 20px
+      height: 380px
+      p
+        font-size: 13px
+        line-height: 1.5
+    .experts-line
+      bottom: 10px
+      img
+        width: 100%
+        padding: 0 20px 0 10px
+
+  .section_6
+    @extend .section_4
+    .newstroi-block
+      width: 100vw !important
+      h3
+        padding-left: 15px
+      .newstroi-cards
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        //align-items: center
+        .for-small
+          margin: 7px !important
+          width: 43vw !important
+          .small-image
+            width: 100% !important
+          .photo-text
+            font-size: 12px
+            line-height: 1.5
+
+  .podcast-block-2
+    display: flex
+    margin: 0 !important
+    a
+      font-size: 10px
+      padding: 5px
+    img
+      height: 30px !important
+      width: 50px !important
+
+  .section_7
+    @extend .section_2
+    .journal-small-block
+      width: auto !important
+      min-height: initial
+      //padding-top: 10px
+      //padding: 10px
+      padding: 0 10px
+      a
+        color: #333
+      h4
+        line-height: 1.5
+        padding-top: 10px
+      p
+        line-height: 1.4
+        
+  .section_8
+    background-color: #fff
+    padding: 10px 20px
+    h1
+      margin: 0
+      font-size: 1.5em
+    p
+      line-height: 1.5
+      font-size: 15px
+
+  .ad-block-2
+    @extend .ad-block-1
+    margin-bottom: 0
+    //padding-bottom: 20px
+    p
+      width: 30vw !important
+      margin-top: 0 !important
+      margin-bottom: 10px !important
+    h5
+      margin-bottom: 10px!important
+    a
+      order: -1
+    .side-block-preview
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+  footer
+    background-color: #242d3f
+    display: flex
+    justify-content: space-between
+    padding-bottom: 200px
+    .link-block
+      padding: 10px
+      p
+        margin: 0
+        font-size: 14px
+      a
+        color: white
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/
 
 /*==========  Mobile First  ==========*/
 
