@@ -28,30 +28,23 @@
         <div class="navbar-header">
           <!-- The mobile navbar-toggle button can be safely removed since you do not need it in a non-responsive implementation -->
           <a class="navbar-brand" href="#">
-            <!--<img src="http://novostroycity.ru/images/hat-min.png" style="
-                width: 39px;
-                top: -4px;
-                position: absolute;
-                left: -23px;
-                -webkit-transform: rotate(7deg);
-                transform: rotate(-28deg);
-                -ms-transform: rotate(7deg);
-            ">-->
-            <span class="white">НОВОСТРОЙ</span><span class="red">CITY</span></a>
+            <span class="white">НОВОСТРОЙ</span><span class="red">CITY</span>
+		  </a>
         </div>
+	  	<a href="#" class="toggle-mnu"><span></span></a>
         <!-- Note that the .navbar-collapse and .collapse classes have been removed from the #navbar -->
-        <div id="navbar">
-			          <ul class="nav navbar-nav">
-            <li><a   href="http://novostroycity.ru/journals">ЖУРНАЛ</a></li>
-			<li><a  href="http://novostroycity.ru/novostroiki"><span class="red">НОВОСТРОЙКИ</span></a></li>
-            <li><a  href="http://novostroycity.ru/skidki">АКЦИИ И СКИДКИ</a></li>
-            <li><a  href="http://novostroycity.ru/zastroishiki">ЗАСТРОЙЩИКИ</a></li>
-            <li><a  href="http://novostroycity.ru/banki">БАНКИ И ИПОТЕКА</a></li>
-            <li><a  href="http://novostroycity.ru/calculator">ИПОТЕЧНЫЙ КАЛЬКУЛЯТОР</a></li>
-		</ul>
-		<!--<span class="pull-right search-glass"><img src="http://novostroycity.ru/images/mglass.png" /></span>-->
-        </div><!--/.nav-collapse -->
       </div>
+		<div id="navbar">
+			<ul class="nav navbar-nav">
+				<li><a  href="http://novostroycity.ru/journals">ЖУРНАЛ</a></li>
+				<li><a  href="http://novostroycity.ru/novostroiki">НОВОСТРОЙКИ</a></li>
+				<li><a  href="http://novostroycity.ru/skidki">АКЦИИ И СКИДКИ</a></li>
+				<li><a  href="http://novostroycity.ru/zastroishiki">ЗАСТРОЙЩИКИ</a></li>
+				<li><a  href="http://novostroycity.ru/banki">БАНКИ И ИПОТЕКА</a></li>
+				<li><a  href="http://novostroycity.ru/calculator">ИПОТЕЧНЫЙ КАЛЬКУЛЯТОР</a></li>
+			</ul>
+			<!--<span class="pull-right search-glass"><img src="http://novostroycity.ru/images/mglass.png" /></span>-->
+		</div>
     </nav>
 	<div class="top-page-margin">
 		&nbsp;
@@ -59,7 +52,7 @@
 
 
 <div class="clickableBanner  full-width relative " data-id="6" data-table="banners">
-		<div class="bg-ad"> <div style="height:310px; background-image:url('../images/defaultBG.jpg')"></div> </div></div>
+		<div class="bg-ad"> <div style="height:310px; background-image:url('images/defaultBG.jpg')"></div> </div></div>
 <div class="container">
 		<div class="pull-left">
 			<div class="min-container  search-block">
@@ -1125,5 +1118,12 @@ $(document).ready(function(){
 
 			<script src="js/masonry.pkgd.min.js"></script>
 			<script src="js/jquery.simplePagination.js"></script>-->
+	<script>
+        $(".toggle-mnu").click(function() {
+            $(this).toggleClass("on");
+            $("#navbar").slideToggle();
+            return false;
+        });
+	</script>
 </body>
 </html>
