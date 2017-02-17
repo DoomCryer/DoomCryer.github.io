@@ -1,0 +1,311 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  body
+    width: 100vw !important
+    min-width: 320px !important
+    font-size: 10px !important
+    p
+      font-size: 10px !important
+    h4
+      font-size: 11px !important
+
+  #newstrois_global_id
+    width: 85vw
+  .navbar-header
+    padding-left: 30px
+    padding-top: 5px
+    font-size: 20px
+    .navbar-brand
+      padding: 0
+      font-size: 20px
+      height: initial !important
+
+  #navbar
+    display: none
+    //min-width: 300px
+    right: 0
+    text-align: left
+    position: absolute
+    z-index: 10
+    background-color: #242d3f
+    ul
+      display: flex
+      flex-direction: column
+      //align-items: flex-end
+      padding: 0
+      float: left
+      li
+        display: block
+        //padding: 6px
+        text-align: center
+        a
+          display: block
+          padding: 10px 20px
+          &:hover
+            background-color: #364563
+
+
+      //li
+      //  display: block
+
+  .navbar
+    margin-bottom: 0!important
+    min-height: initial !important
+    .container
+      width: 100% !important
+      height: 50px !important
+      padding: 0
+      //display: flex
+      //justify-content: space-between
+      .toggle-mnu
+        float: right
+
+  .container
+    width: 95vw !important
+    margin-left: 0
+
+  .navbar-nav
+    li
+      a
+        font-size: 13px
+        padding: 15px 10px 10px 10px
+
+  .top-page-margin
+    display: none
+
+  .bg-ad
+    width: 100vw !important
+
+  .custom-navigation-4
+    display: none !important
+
+  .search-block
+    height: 250px !important
+    width: 100vw !important
+    p
+      margin: 0 0 20px 0 !important
+      font-size: 13px !important
+    .content
+      padding-left: 15px !important
+    form
+      input
+        font-size: 14px
+        text-indent: 10px
+        height: 40px !important
+      // color: #eee !important
+      .search-param
+        width: 95vw
+        display: flex
+        padding-top: 20px
+        label
+          font-size: 12px
+        // padding: 0 10px
+        // justify-content: space-around
+        input
+          width: 25%
+          height: 30px !important
+          margin: 7px 10px
+          font-size: 12px
+
+  .podcast-block
+    padding: 5px 5px
+    padding-top: 0
+    width: 100vw
+    height: initial !important
+    background-color: #fff
+    text-align: center
+    line-height: 1
+    a
+      font-size: 9px
+    .content
+      padding-top: 10px
+      padding-left: 10px
+      width: 100vw
+
+  .gallery-big-block
+    padding: 0 20px !important
+    //margin-bottom: 20px !important
+    width: 100vw !important
+    background-image: url('../images/galbg_.jpg') !important
+    background-size: auto !important
+    height: initial !important
+    .custom-navigation-1
+      display: none !important
+    p
+      font-size: 8px !important
+      line-height: 1.2
+      margin-bottom: 0
+    h4
+      margin: 10px 0 0
+    .small-line
+      margin: 10px 0
+    .slides
+      .white
+        padding: 7px
+      h4
+        font-size: 10px
+        margin: 0
+      img
+        height: initial !important
+    .flex-control-nav
+      position: relative
+      margin-top: 10px
+      bottom: 0
+      height: 20px
+    .flexslider-1
+      height: initial !important
+
+  .ad-block-1
+    width: 100vw
+    padding: 0
+    //padding-top: 10px
+    background-color: #eff2f4
+    display: flex
+    //padding-left: 15px
+    h5
+      font-size: 10px !important
+      margin: 0 0 5px
+    p
+      width: 40vw !important
+    .side-block-preview
+      padding: 5px 5px
+      //padding-left: 10px
+      margin: 0
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    .full-link
+      font-size: 11px !important
+
+  .disco
+    img
+      width: 100vw !important
+      height: initial !important
+
+  .before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+
+  .journal-small-block
+    width: auto !important
+    min-height: initial !important
+    img
+      height: initial !important
+
+
+
+
+  .podcast-block-2
+    display: flex
+    margin: 0 !important
+    a
+      font-size: 10px
+      padding: 5px
+    img
+      height: 30px !important
+      width: 50px !important
+
+  .ad-block-2
+    @extend .ad-block-1
+    margin-bottom: 0
+    //padding-bottom: 20px
+    p
+      width: 30vw !important
+      margin-top: 0 !important
+      margin-bottom: 10px !important
+    h5
+      margin-bottom: 10px!important
+    a
+      order: -1
+    .side-block-preview
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+  footer
+    background-color: #242d3f
+    .line
+      display: flex
+      justify-content: space-between
+      padding-bottom: 10px
+      .link-block
+        padding: 10px
+        p
+          margin: 0
+        //font-size: 14px
+        a
+          color: white
+
+    .pull-left
+      padding-left: 10px
+      display: flex
+      flex-grow: 1
+      flex-direction: column
+    .social-icons
+      display: flex
+      justify-content: space-between
+      width: 100%
+      img
+        width: 25px
+    .address
+      flex-grow: 1
+      padding-left: 5%
+      text-align: left
+      padding-top: 10px
+      p
+        color: #6e8196
+        margin: 0
+        margin-bottom: 5px
+        font-size: 8px!important
+
+    .email
+      //width: 60%
+      //margin: 0 auto
+      width: 100%
+      text-align: center
+      .input-group
+        display: flex
+        justify-content: center
+      p
+        font-size: 12px !important
+        text-align: center
+        margin-top: 5px
+      .form-control
+        border-top-right-radius: 0
+        border-bottom-right-radius: 0
+        line-height: 1.25
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  body
+    width: 100vw !important
+    min-width: 320px !important
+    p
+      font-size: 13px !important
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

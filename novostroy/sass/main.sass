@@ -1,149 +1,178 @@
-@import "bourbon"
-@import "fonts"
-@import "libs"
 @import "vars"
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+/*==========  Mobile First  ==========*/
 
-*:-moz-placeholder
-	color: #666
-	opacity: 1
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  .section_2
+    width: 100vw
+    display: flex
+    //margin-bottom: 200px
+    font-size: 12px
+    h4
+      margin: 0
+      font-size: 13px
+    .events-block, .news-block
+      height: initial !important
+      padding: 10px 15px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    //.news-block
+    //  height: initial !important
+    //  padding: 10px 15px
+    //  display: flex
+    //  flex-direction: column
+    //  justify-content: space-between
+    .small-line
+      margin: 10px 0
+    .events-story, .news-story
+      margin-top: 0 !important
+      margin-bottom: 10px !important
+    .events-context, .news-context
+      margin: 0 !important
 
-*::-moz-placeholder
-	color: #666
-	opacity: 1
+  .section_3
+    @extend .section_2
+    .journal-small-block
+      width: auto !important
+      min-height: initial
+      //padding-top: 10px
+      //padding: 10px
+      padding: 0 10px
+      a
+        color: #333
+      h4
+        line-height: 1.5
+        padding-top: 10px
+      p
+        line-height: 1.4
 
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
-html, body
-	height: 100%
-
-body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.75
-	font-family: $default-font
-	overflow-x: hidden
-	// background: url(../images/bglines.jpg) repeat
-	background-color: #ffffff
-	overflow-x: hidden
-	// width: 100%
-	// .with-ads
-	// 	background: url(../images/bglines.jpg) 0px 200px repeat-x
-	// 	background-color: #ffffff
-
-.btn
-	display: inline-block
-	padding: 6px 12px
-	margin-bottom: 0
-	font-size: 14px
-	font-weight: 400
-	line-height: 1.42857143
-	text-align: center
-	white-space: nowrap
-	vertical-align: middle
-	-ms-touch-action: manipulation
-	touch-action: manipulation
-	cursor: pointer
-	-webkit-user-select: none
-	-moz-user-select: none
-	-ms-user-select: none
-	user-select: none
-	background-image: none
-	border: 1px solid transparent
-	border-radius: 4px
-
-.btn-danger
-	margin-top: 30px
-	margin-right: 10px
-	color: #fff
-	background-color: #d9534f
-	border-color: #d43f3a
-	width: 50%
-
-
-
-.topbanner
-	display: none
-
-// .navbar
-// 	// margin-bottom: 0px
-// 	// position: relative
-//   // top: 0px
-//   // width: 100%
-//   // z-index: 1000
-// 	background-color: #242d3f
-//
-// .navbar-header
-// 	padding: 5px 15px
-//
-// .navbar-brand
-// 	// height: 50px
-//   font-size: 26px
-//   line-height: 20px
-//
-// .white
-// 	color: #ffffff
-//
-// .red
-// 	color: #ed1b23
-//
-// .input-group
-// 	input
-// 		display: block
-// 		margin-left: 20px
-// 		width: 90%
-// 		color: #eee
-// 		font-size: 14px
-// 		// height: 40px
-// 		text-indent: 10px
-// 		padding: 5px 0
-// 	// width: 100%
-// 	// .form-control
-// 	// 	width: 90%
-// 	// 	margin: auto
-//
-// .navbar-header
-// 	span
-// 		font-size: 20px
-//
-// .navbar-nav
-// 	li
-// 		a
-// 			font-size: 13px
-// 			padding: 15px 10px 10px 10px
-//
-// .top-page-margin
-// 	display: none
-//
-// .min-container
-// 	width: 100vw
-//
-// .podcast-block
-// 	height: 40px
-// 	a
-// 		font-size: 11px
-// 	.content
-// 		padding-top: 10px
-// 		padding-left: 10px
-// 		width: 100vw
-//
-// .gallery-big-block
-// 	width: 100vw
+  .section_4
+    width: 100vw
+    display: flex
+    background-image: url('../images/defaultBG.jpg')
+    background-size: cover
+    background-position-x: left
+    background-position-y: bottom
+    position: relative
+    &::before
+      @extend .before
+      background-color: #010c23
+      opacity: .7
+    h3
+      margin: 0 !important
+    .newstroi-block
+      width: 100vw !important
+      padding: 5px 10px 10px !important
+      height: initial !important
+      z-index: 2
+      h3
+        font-size: 17px
+        padding-bottom: 5px
+      .big-image
+        width: 100% !important
+        height: 250px
+    .for-big
+      width: 100% !important
+      margin-right: 0 !important
+    .photo-text
+      padding: 10px !important
+      h4
+        margin: 0
+      p
+        margin: 10px 0 0 !important
+        //font-size: 13px
+        line-height: 1.5
 
 
+  .section_5
+    @extend .section_2
+    //margin-bottom: 200px
+    .experts-block
+      padding: 10px
+      padding-bottom: 20px
+      height: 320px
+      .img-expert
+        width: 120px !important
+      p
+        //font-size: 13px
+        line-height: 1.5
+      h3
+        font-size: 16px
+    .experts-line
+      bottom: 10px
+      img
+        width: 100%
+        padding: 0
+        padding-right: 10px
+
+  .section_6
+    @extend .section_4
+    .newstroi-block
+      width: 100vw !important
+      h3
+        padding-left: 15px
+      .newstroi-cards
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        //align-items: center
+        .for-small
+          margin: 7px !important
+          width: 42vw !important
+          height: 135px
+          overflow: hidden
+          .small-image
+            width: 100% !important
+          .photo-text
+            font-size: 9px
+            line-height: 1.5
+          .photo-name
+            font-size: 10px
+            padding: 6px
+
+  .section_7
+    @extend .section_2
+    .journal-small-block
+      padding: 0 10px
+      a
+        color: #333
+      h4
+        line-height: 1.5
+        padding-top: 10px
+      p
+        line-height: 1.4
+
+  .section_8
+    background-color: #fff
+    padding: 10px 20px
+    h1
+      margin: 0
+      font-size: 1em
+    p
+      line-height: 1.5
+      text-align: justify
 
 
-@import "media" // Всегда в конце
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/
+
+@import "common"
+@import "media_common" // Всегда в конце
