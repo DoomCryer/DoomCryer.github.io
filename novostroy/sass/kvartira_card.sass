@@ -1,0 +1,188 @@
+@import "vars"
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  h1,h2,h3,h4,.h3
+    margin: 0
+  h3
+    font-size: 15px
+    background-color: #fff
+    padding: 5px
+  hr
+    margin: 0!important
+  .h3
+    font-size: 16px
+    margin: 0
+    font-weight: normal
+  .section_1
+    .apartment-title
+      padding: 10px
+      .h3
+        font-size: 18px
+    .line
+      display: flex
+      justify-content: space-between
+      align-items: center
+    .img-wrap
+      padding: 10px
+      padding-right: 20px
+      img
+        width: 25px
+        height: 25px
+    .apartment-photo
+      border-top: 3px solid #a5a5a5
+      border-bottom: 3px solid #a5a5a5
+      margin-bottom: 10px
+      height: auto
+    .newstroi-page
+      padding-left: 10px
+      td
+        padding: 5px
+    .button-wrap
+      padding: 0 5px
+      .mobile-button-grey
+        padding: 8px
+    .apartment-address
+      padding: 5px 5px 5px 15px
+  .tab-content>.tab-pane
+    display: none
+  .tab-content>.active
+    display: block
+  .card-tabs
+    position: relative!important
+    display: flex
+    margin: 0
+    padding: 0
+    li
+      display: block
+      background-color: #ddd!important
+      height: 40px
+      padding-top: 5px
+      a
+        padding: 0!important
+    li.active
+      background-color: #fff!important
+
+  .section_2
+    border-bottom: 1px solid #eee
+    padding-bottom: 10px
+    .h3
+      padding: 5px 5px 0 10px
+    .full-width
+      display: flex
+      .bank-element
+        width: 50%
+        padding-left: 5px
+        text-align: center
+        img
+          width: 100%
+          max-height: 100px
+    .calc
+      padding-top: 10px
+      padding-left: 10px
+      text-decoration: underline
+
+  .section_3
+    .infrastructures
+      display: flex !important
+      flex-wrap: wrap
+      padding-left: 20px
+      div
+        height: initial
+        width: initial
+    .sprite-infra
+      margin: auto
+      zoom: 0.7
+      text-align: center
+
+  .section_4
+    padding-bottom: 10px
+    a
+      padding: 5px 10px 0
+    p
+      margin: 0
+      text-align: justify
+    .full-width
+      display: flex
+      flex-wrap: wrap
+      .near-apt-element
+        width: 48%
+        padding: 5px 0 0 10px
+        img
+          height: 100px
+        td
+          padding: 5px 0
+        .newstroi-page.shorter-first table tr td:first-of-type
+          width: 50px
+    .discount-block
+      display: flex
+      padding: 5px 0
+      .h4
+        font-weight: bold
+        font-size: 12px !important
+      .discountImage
+        width: initial
+        img
+          width: 100px
+      .discount-info
+        padding: 5px
+        img
+          width: 15px
+      .akcii-bottom
+        position: relative
+        bottom: 0
+      .readMoreDiscount, .readLessDiscount
+        position: relative
+        right: 0
+        bottom: 0
+        padding-left: 40px
+      .discountText
+        padding: 0
+        img
+          transform: rotate(180deg)
+    .comment
+      padding: 5px
+      border-bottom: 1px solid #ddd
+    .html_content
+      padding: 0 5px
+      text-align: justify
+    .more
+      text-align: center
+      padding-top: 5px
+      img
+        width: 15px
+
+
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  /**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+  /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/
+
+
+
+
+@import "common"
+@import "search-block"
+@import "call-form"
+@import "media_common" // Всегда в конце
