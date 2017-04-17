@@ -1,0 +1,55 @@
+@import url(common.css);
+@import url(newstroi-small-card.css);
+@import url(search-block.css);
+@import url(media_common.css);
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  h3 {
+    background-color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 5px; }
+  hr {
+    margin: 10px 0 0 !important; }
+  h1 {
+    margin: 0 !important;
+    font-size: 16px !important;
+    padding: 5px 10px; }
+  .blue-ad-button {
+    width: 240px;
+    font-size: 14px !important;
+    margin: 5px;
+    height: 35px; }
+  .buttons {
+    text-align: center; }
+  .section_1, .section_2, .section_3, .section_4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; }
+  .section_4 {
+    overflow: hidden; }
+    .section_4 p {
+      padding: 5px 10px;
+      margin: 0;
+      text-align: justify; }
+    .section_4 h3 {
+      font-size: 13px;
+      padding: 5px 10px; }
+    .section_4 .more-wrap {
+      width: 55%; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

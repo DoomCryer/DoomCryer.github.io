@@ -1,0 +1,32 @@
+@import url(common.css);
+@import url(newstroi-small-card.css);
+@import url(media_common.css);
+@import url(journals_list.css);
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .category {
+    padding: 10px 10px 0; }
+    .category h4 {
+      margin: 0;
+      font-size: 16px !important; }
+    .category .small-line {
+      margin: 3px 0 0; }
+  .journal-small-block .other {
+    display: none; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
