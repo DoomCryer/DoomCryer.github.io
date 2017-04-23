@@ -1,0 +1,38 @@
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .container {
+    padding: 0 !important; }
+  .search-bg {
+    width: 100vw !important;
+    background: url("../images/defaultBG.jpg");
+    background-size: cover; }
+    .search-bg .btn-danger {
+      margin-top: 25px;
+      height: 30px;
+      width: 49%;
+      padding-top: 3px; }
+    .search-bg .search-block {
+      height: 125px !important; }
+      .search-bg .search-block .content {
+        padding-top: 20px; }
+      .search-bg .search-block form input {
+        height: 30px !important; }
+      .search-bg .search-block .search-param {
+        padding-top: 10px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

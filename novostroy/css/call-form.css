@@ -1,0 +1,80 @@
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .content .clear-content {
+    margin: 0; }
+    .content .clear-content .h3 {
+      margin: 0;
+      font-size: 14px !important;
+      padding: 10px 7px 0;
+      text-align: center; }
+    .content .clear-content .input-group {
+      width: 50% !important;
+      margin-left: 20px;
+      margin-bottom: 5px; }
+      .content .clear-content .input-group input {
+        height: 25px;
+        font-size: 11px; }
+    .content .clear-content .call_form {
+      padding-bottom: 7px; }
+      .content .clear-content .call_form .line {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 10px;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+    .content .clear-content .btn-group {
+      display: block !important;
+      width: 57% !important; }
+      .content .clear-content .btn-group button {
+        margin-left: 20px !important;
+        margin-top: 2px !important;
+        border: 1px #ccc solid;
+        height: 25px; }
+      .content .clear-content .btn-group .btn {
+        font-size: 11px;
+        width: 130px;
+        line-height: 1.05; }
+      .content .clear-content .btn-group .dropdown-menu {
+        font-size: 11px; }
+    .content .clear-content .ui.dropdown {
+      margin: 0 20px;
+      height: 25px;
+      width: 140px;
+      font-size: 11px;
+      padding: 0 5px;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      border: 1px solid rgba(34, 36, 38, 0.25); }
+    .content .clear-content .btn {
+      font-size: 10px;
+      width: 120px; }
+    .content .clear-content .comments {
+      margin-top: -20px; }
+      .content .clear-content .comments p {
+        margin: 0 10px 5px; }
+    .content .clear-content .large-font {
+      font-size: 10px !important;
+      margin: 5px 10px 10px; }
+    .content .clear-content #RecaptchaField1 {
+      margin-left: 20px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
