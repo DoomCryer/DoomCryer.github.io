@@ -1,3 +1,4 @@
+@import url(footer.css);
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
@@ -223,86 +224,6 @@
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-  footer {
-    background-color: #242d3f; }
-    footer .line {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding-bottom: 10px; }
-      footer .line .link-block {
-        padding: 10px; }
-        footer .line .link-block p {
-          margin: 0; }
-        footer .line .link-block a {
-          color: white; }
-    footer .pull-left {
-      padding-left: 10px;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-    footer .social-icons {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 100%; }
-      footer .social-icons img {
-        width: 25px; }
-    footer .address {
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
-      padding-left: 5%;
-      text-align: left;
-      padding-top: 10px; }
-      footer .address p {
-        color: #6e8196;
-        margin: 0;
-        margin-bottom: 5px;
-        font-size: 8px !important; }
-    footer .email {
-      width: 100%;
-      text-align: center; }
-      footer .email .input-group {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-      footer .email p {
-        font-size: 12px !important;
-        text-align: center;
-        margin-top: 5px; }
-      footer .email .form-control {
-        -webkit-border-top-right-radius: 0;
-                border-top-right-radius: 0;
-        -webkit-border-bottom-right-radius: 0;
-                border-bottom-right-radius: 0;
-        line-height: 1.25; }
   .more-wrap {
     width: 60%;
     float: right;
