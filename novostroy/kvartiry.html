@@ -29,6 +29,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
         <script src="js/jQuery-2.1.3.min.js"></script>
+        <link href="css/semantic-dropdown.min.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -63,6 +64,104 @@
 
         <div class="content bg-white section_1">
             <h1 class="h3">Квартиры в новостройках Москвы и Подмосковья</h1>
+
+            <form>
+                <div>
+                    <div>
+                        <span>Сортировать</span>
+
+                        <select name="sort" id="sort" class="ui dropdown">
+                            <option value="any" >Без сортировки</option>
+                            <option value="by_price_up" >По цене &darr;</option>
+                            <option value="by_price_down" >По цене &uarr;</option>
+                        </select>
+                        <span><a href="#">Развернуть фильтр</a></span>
+                    </div>
+
+                    <div class="line">
+                        <div class="inline-block">
+                            <label>Расположение</label><br>
+                            <select  name="region" id="region" class="ui dropdown">
+                                <option value="any"  >Любой регион</option>
+                                <option value="4"  >Москва</option>
+                                <option value="1"  >Московская область</option>
+                            </select>
+                        </div>
+                        <div class="year_block">
+                            <label>Год сдачи</label><br>
+                            <select  name="building_year" id="building_year" class="ui dropdown">
+                                <option value="any"  >Любой</option>
+                                <option value="done"  >Сдан</option>
+                                <option value="2013"  >2013</option>
+                                <option value="2014"  >2014</option>
+                                <option value="2015"  >2015</option>
+                                <option value="2018"  >2016</option>
+                                <option value="2017"  >2017</option>
+                                <option value="2018"  >2018</option>
+                                <option value="2019"  >2019</option>
+                                <option value="2020"  >2020</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="inline">
+                        <label>Количество комнат</label><br>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default custom-press-grey long-checkbox ">
+                                <input name="is_studio" type="checkbox"    autocomplete="off"> Студия
+                            </label>
+                                <label class="btn btn-default custom-press-grey short-checkbox ">
+                                <input name="room1" type="checkbox"    autocomplete="off"> 1
+                            </label>
+                            <label class="btn btn-default custom-press-grey short-checkbox ">
+                                <input name="room2" type="checkbox"    autocomplete="off"> 2
+                            </label>
+                            <label class="btn btn-default custom-press-grey short-checkbox ">
+                                <input name="room3" type="checkbox"    autocomplete="off"> 3
+                            </label>
+                            <label class="btn btn-default custom-press-grey short-checkbox ">
+                                <input name="room4" type="checkbox"   autocomplete="off"> 4+
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:15px;">
+                    <div class="inline">
+                        <label>Стоимость квартиры (руб.)</label><br>
+                        <div class="input-group line vmid">
+                            <span>от</span>
+                            <input type="text" class="form-control size-full numeric" name="price_from" value="">
+                            <span>до</span>
+                            <input type="text" class="form-control size-full numeric" name="price_to"  value="">
+                        </div>
+                    </div>
+                    <div class="search-button">
+                        <label></label><br>
+                        <input type="hidden" name="start_search" id="start_search" value="0" />
+                        <button class="btn searchSecondary" type="submit">Применить фильтр</button>
+                        <span><a href="#">Свернуть фильтр</a></span>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $("input[name=viewOptionsApts]:radio").change(function () {
+                            $('.entry-portion-block').hide();
+                            if($(this).attr('id') == "map"){
+                                $('.pagination').hide();
+                                populateMap();
+                            }
+                            else
+                                $('.pagination').fadeIn(500);
+
+                            $('.entry-'+$(this).attr('id')).fadeIn(500);
+                        });
+                    });
+                    $('#region').dropdown();
+                    $('#sort').dropdown();
+                    $('#building_year').dropdown();
+                </script>
+            </form>
 
             <div class="near-apt-element border vmid" style=" margin-top:15px; ">
                 <div class="star-line"><i class="sprite-newstroi sprite-newstroi-star inline"></i></div>
