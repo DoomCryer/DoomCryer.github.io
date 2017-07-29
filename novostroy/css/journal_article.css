@@ -1,0 +1,96 @@
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@import url(common.css);
+@media only screen and (min-width: 320px) {
+  h3 {
+    background-color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0; }
+  hr {
+    margin: 10px 0 0; }
+  .journal-entry-head img {
+    height: 250px; }
+  .journal-entry-head .journal-entry-head-text {
+    bottom: 0px;
+    padding: 5px 10px !important; }
+  .html_content.journal_content {
+    padding: 0px; }
+    .html_content.journal_content p {
+      font-size: 12px !important;
+      text-align: justify;
+      line-height: 1.4;
+      margin: 0;
+      padding: 3px 15px; }
+    .html_content.journal_content .main {
+      font-size: 14px;
+      padding: 3px 0;
+      line-height: 1.4;
+      padding: 3px 0; }
+    .html_content.journal_content .with_img {
+      padding: 5px 0; }
+    .html_content.journal_content .ya-share2 {
+      padding: 0 15px; }
+  .small-line {
+    margin: 0 10px; }
+  .content {
+    background-color: #fff; }
+    .content h4 {
+      font-size: 13px !important;
+      margin: 0;
+      padding: 10px 10px 5px; }
+  .journal-small-block {
+    width: 100% !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px #eee solid; }
+    .journal-small-block p {
+      display: none; }
+    .journal-small-block .small-line {
+      display: none; }
+    .journal-small-block img {
+      width: 90px;
+      height: 60px !important; }
+    .journal-small-block a {
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2; }
+    .journal-small-block .h4 {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      font-size: 12px !important;
+      color: #000;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
