@@ -1,25 +1,46 @@
 @import "bourbon"
 @import "vars"
 @import "libs"
+@import "../libs/Magnific-Popup/magnific-popup.sass"
+@import "../libs/Magnific-Popup/_magnific-popup_new.sass"
+@import "../libs/owl/assets/owl.carousel.sass"
 
 //Custom styles here
-.test
-  font-size: 60px
-  text-transform: uppercase
-
 
 @import "media"
 
+// h1,p
+//   text-align: center
+//   font-family: "OfficinaSansBook"
+//   font-weight: normal
+// h1
+//   font-size: em(40px)
+//   margin-bottom: 0
+// p
+//   font-size: em(25px)
+//   margin-bottom: 40px
+//   letter-spacing: -0.5px
+
+// .equal, .equal > div[class*='col-']
+//   display: flex
+//   flex: 1 0 auto
+
 .section_1
-  min-height: 600px
+  margin-top: 30px
+  margin-bottom: 80px
+  // min-height: 600px
   h2
     font-size: em(40px)
     text-align: center
     font-family: "OfficinaSansBook"
     font-weight: normal
     margin-bottom: 0px
+    // display: inline-block
   .s1_item
     padding: 30px 30px
+    opacity: 0
+    // &.on
+    //   opacity: 1
   .item_content
     font-size: em(25px)
     line-height: 1.2
@@ -45,14 +66,22 @@
     font-weight: normal
   h1
     font-size: em(40px)
-    margin: 0 0
+    margin-bottom: 0
   p
     font-size: em(25px)
     margin-bottom: 40px
     letter-spacing: -0.5px
+  .s2_items
+    perspective: 600px
   .s2_item
     position: relative
-    margin: 0px 0px
+    margin: 15px 0px
+    transition: all 1.5s ease
+    &-off
+      transform: rotateY(100deg)
+      opacity: 0
+    &-on
+      opacity: 1
     .img-wrap
       display: inline-block
       position: relative
@@ -74,7 +103,220 @@
 
 
 .section_3
-  min-height: 800px
+  padding-bottom: 70px
   background-size: cover
   background-position: center
   position: relative
+  h1
+    text-align: center
+    font-weight: normal
+    padding-top: 90px
+    color: #fff
+    letter-spacing: -1px
+  a
+    color: #fff
+    text-transform: uppercase
+    font-size: em(16px)
+    font-family: "OfficinaSansBook"
+    text-align: center
+  ul
+    @extend .ulmnu
+  .img-wrap
+    text-align: center
+    margin-top: 40px
+  .owl-controls
+    text-align: center
+    .owl-dot
+      width: 12px
+      height: 12px
+      background-color: #dcdcdc
+      display: inline-block
+      border-radius: 10em
+      margin: 0 3px
+      &.active
+        background-color: $main-color
+    .owl-dots
+      margin-top: 40px
+    .owl-nav
+      position: absolute
+      top: 40%
+      width: 100%
+      > div
+        height: 29px
+        width: 16px
+        background-image: url(../img/slider_arrows.png)
+        position: absolute
+        left: 20px
+        opacity: .5
+        transition: all .25s ease
+        &:hover
+          opacity: 1
+      .owl-next
+        right: 20px
+        left: auto
+        background-position: -16px 0
+    .slider
+      .slide
+        text-align: center
+        position: relative
+
+.ulmnu
+  list-style-type: none
+  padding: 0
+  margin: 0
+  text-align: center
+  li
+    display: inline-block
+    padding: 20px
+    &.active
+      a
+        color: #b2c233
+        border-bottom: 2px solid #b2c233
+        padding-bottom: 10px
+
+.section_4
+  // padding-bottom: 30px
+  p
+    text-align: justify
+    font-family: "OfficinaSansBook"
+    font-weight: normal
+    margin-top: 0px
+    font-size: em(25px)
+    line-height: 1.5
+
+  h1
+    margin-top: 80px
+  h2
+    font-weight: 600
+    margin-bottom: 15px
+    margin-top: 0px
+    line-height: 1.2
+  .item
+    position: relative
+    margin-bottom: 40px
+    text-align: center
+  // .row
+  //   display: -webkit-box
+  //   display: -webkit-flex
+  //   display: -ms-flexbox
+  //   display: flex
+  //   flex-wrap: wrap
+  // [class*='col-']
+  //   display: flex
+  //   flex-direction: column
+  //   justify-content: flex-end
+  .img-wrap
+    // align: center
+    display: inline-block
+    position: relative
+    img
+      width: 100%
+      max-width: 100%
+      border-radius: 10px
+
+.section_5
+  margin-bottom: 20px
+  .line
+    display: flex
+    justify-content: center
+    margin-top: 15px
+  .card
+    width: 185px
+    text-align: center
+    position: relative
+    h4
+      text-align: center
+      font-size: em(18px)
+      text-transform: uppercase
+      margin-top: 10px
+    .card-icon
+      width: 160px
+      display: inline-block
+      border-radius: 20em
+      overflow: hidden
+      //box-shadow: 0 0 0 7px $main-color
+      border: $main-color 7px solid
+      img
+        width: 100%
+  .number
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    text-align: center
+    background-color: white
+    position: absolute
+    border: $main-color 2px solid
+    top: 142px
+    left: 75px
+    font-size: em(18px)
+
+.director
+  // margin-top:  10px
+  border-bottom: 2px solid #ccc
+  border-top: 2px solid #ccc
+  padding: 40px 0
+  opacity: 0
+  h2
+    line-height: 1.4
+    text-align: justify
+    padding: 10px
+  p
+    text-align: right
+    font-family: "OfficinaSansBook"
+    font-weight: normal
+    font-size: em(30px)
+    letter-spacing: -1px
+  .img-wrap
+    margin-top: 30px
+    width: 250px
+    overflow: hidden
+    img
+      border-radius: 20em
+      width: 100%
+
+.section_6
+  padding-bottom: 30px
+
+.section_7
+  //padding-bottom: 70px
+  background-size: cover
+  background-position: center
+  position: relative
+  //height: 400px
+  margin-bottom: 20px
+  h2
+    text-align: center
+    margin: 10px
+    margin-right: 20px
+    font-weight: 600
+  .forms
+    opacity: 1
+    width: 100%
+  .img-wrap
+    display: inline-block
+    overflow: hidden
+    img
+      width: 100%
+  .line
+    display: flex
+    align-items: center
+  .container
+    text-align: center
+
+
+
+
+.white-popup
+  position: relative
+  background: #ccc
+  padding: 40px
+  width: 300px
+  margin: 20px auto
+  text-align: center
+
+.empty_p
+  margin: 0px
+
+
+footer
+  margin: 20px 0px

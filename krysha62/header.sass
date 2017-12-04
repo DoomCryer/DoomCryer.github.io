@@ -3,6 +3,21 @@
 @import "sass/base"
 
 //First screen styles
+body
+  font-family: "OfficinaSansBook"
+
+.headers
+  text-align: center
+  font-weight: normal
+h2
+  @extend .headers
+  font-size: em(30px)
+  letter-spacing: -1px
+h1
+  @extend .headers
+  font-size: em(40px)
+  text-transform: uppercase
+
 .main-head
   // padding-top: 30px
   h1
@@ -12,36 +27,42 @@
   background-size: cover
   background-position: center
   position: relative
-  min-height: 720px
+  min-height: 650px
   h1
     color: #FFFFFF
     font-size: em(60px)
     line-height: 70px
-    text-align: center
+    text-align: right
     font-family: "PFCentroSlabProMedium", $helvetica
     padding-top: 30px
+    padding-right: 20px
     text-shadow: 1px 1px 2px black, 0 0 0.5em black
     margin-top: 0
 
 
 .top-line
   p
-    margin-bottom: 0px
+    margin-bottom: 10px
+    margin-top: 10px
   // min-height: 60px
 
-.logo
-  img
-    width: 330px
-    height: 90px
-    margin-top: 20px
-    margin-left: 60px
+.logo-wrap
+  .logo
+    img
+      width: 330px
+      height: 90px
+      margin-top: 10px
+      margin-left: 60px
+
 
 
 .phone-wrap
   position: relative
+  margin-top: 10px
   .phone
+    font-family: "OfficinaSansBook"
     font-size: em(25px)
-    line-height: 45px
+    line-height: 30px
     text-align: right
     // padding-top: 10px
     display: inline-block
@@ -52,6 +73,7 @@
   background-color: transparentize(#ffffff, 0.25)
   width: 290px
   border-radius: 20px
+  opacity: 0
   p
     font-size: em(23px)
     text-align: justify
@@ -95,7 +117,9 @@
   text-transform: uppercase
   font-weight: 900
   border-radius: 6px
-
+  transition: all 0.4s ease
+  &:hover
+    background-color: #057d68
 
 .main-title
   h2
